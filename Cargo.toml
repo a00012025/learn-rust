@@ -17,3 +17,7 @@ path = "src/hello.rs"
 name = "enum"
 path = "src/enum.rs"
 
+[[bin]]
+name = "flow"
+path = "src/flow.rs"
+
