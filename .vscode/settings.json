@@ -1,3 +1,7 @@
 {
-  "rust-analyzer.linkedProjects": ["./foo/Cargo.toml", "./bar/Cargo.toml"]
+  "rust-analyzer.linkedProjects": [
+    "./foo/Cargo.toml",
+    "./bar/Cargo.toml",
+    "./vanity-address/Cargo.toml"
+  ]
 }
