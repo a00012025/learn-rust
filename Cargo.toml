@@ -1,0 +1,15 @@
+[package]
+name = "hello"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "print"
+path = "src/print.rs"
+
+[[bin]]
+name = "hello"
+path = "src/hello.rs"
+
