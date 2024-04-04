@@ -1,3 +1,5 @@
+use std::mem;
+
 fn main() {
     let mut names = vec!["Bob", "Frank", "Ferris"];
 
@@ -35,4 +37,14 @@ fn main() {
     match value {
         ref r => println!("Got a reference to a value: {:?}", r),
     }
+
+    let movable = Box::new(3);
+    let consume = || {
+        println!("`movable`: {:?}", movable);
+        mem::drop(movable);
+    };
+
+    // `consume` consumes the variable so this can only be called once.
+    consume();
+    // consume();
 }
