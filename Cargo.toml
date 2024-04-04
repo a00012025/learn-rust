@@ -13,3 +13,7 @@ path = "src/print.rs"
 name = "hello"
 path = "src/hello.rs"
 
+[[bin]]
+name = "enum"
+path = "src/enum.rs"
+

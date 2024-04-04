@@ -13,7 +13,7 @@ struct Deep(DebugPrintable);
 #[derive(Debug)]
 struct Person<'a> {
     name: &'a str,
-    age: u8
+    age: u8,
 }
 
 #[derive(Debug)]
@@ -54,14 +54,17 @@ fn main() {
     println!("This struct `{:?}` will print...", DebugPrintable(3).0);
     // println!("This struct `{}` won't print...", DebugPrintable(3));
     println!("This struct `{:?}` will print...", Deep(DebugPrintable(30)));
-    println!("This struct `{:?}` will print...", Deep(DebugPrintable(30)).0.0);
+    println!(
+        "This struct `{:?}` will print...",
+        Deep(DebugPrintable(30)).0 .0
+    );
 
     let number: f64 = 1.0;
     let width: usize = 5;
     println!("{number:>width$}");
 
     // print floating number
-    println!("{number:.3}", number=3.1415926);
+    println!("{number:.3}", number = 3.1415926);
 
     // print Person
     let name = "Peter";
@@ -72,4 +75,3 @@ fn main() {
 
     println!("Number: 0x{:0>2X}{:0>2X}", 123, 12)
 }
-

@@ -68,7 +68,10 @@ fn main() {
     println!("Debug print: {:?}", m);
     println!("Display print: {}", m);
 
-    let c = Complex { real: 3.33, imag: 7.22 };
+    let c = Complex {
+        real: 3.33,
+        imag: 7.22,
+    };
     println!("Display: {}", c);
     println!("Debug: {:?}", c);
 
