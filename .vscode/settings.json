@@ -2,6 +2,7 @@
   "rust-analyzer.linkedProjects": [
     "./foo/Cargo.toml",
     "./bar/Cargo.toml",
-    "./vanity-address/Cargo.toml"
+    "./vanity-address/Cargo.toml",
+    "./plonky2-example/Cargo.toml"
   ]
 }
